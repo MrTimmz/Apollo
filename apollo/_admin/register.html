@@ -1,0 +1,137 @@
+<?php include "header.php"; ?>
+
+    <div class="container">
+        <form>
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-5">
+                                <div class="text-center">
+                                    <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
+                                    <img src="../assets/img/apollo_logo.svg" alt="..." class="img-filter" />
+                                </div>
+                                <form class="user">
+                                    <div class="form-group row">
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" name="name"
+                                                placeholder="Firstname" pattern="[A-Za-z ]+" required>
+                                        </div>
+
+                                        <div class="col-sm-4 mb-3 mb-sm-0">
+                                            <input type="text" class="form-control form-control-user" name="prefix"
+                                                placeholder="Prefix">
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control form-control-user"
+                                                placeholder="Last Name" pattern="[A-Za-z ]+" required
+                                                placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control form-control-user" name="email" required
+                                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                            placeholder="Email Address">
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-sm-6 mb-3 mb-sm-0">
+                                            <input type="password" class="form-control form-control-user"
+                                                name="password" placeholder="Password">
+                                            <div class="password-reqs text-success mt-2"><i
+                                                    class="fas fa-check-circle"></i>
+                                                Password requirements met.</div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="password" class="form-control form-control-user"
+                                                name="passwordrpt" placeholder="Repeat Password">
+                                            <div class="valid-password password-match d-none">
+                                                Passwords match!
+                                            </div>
+                                            <div class="invalid-password password-mismatch d-none">
+                                                Passwords do not match.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                        Register Account
+                                    </a>
+                                </form>
+                                <hr>
+                                <div class="text-center">
+                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                                </div>
+                                <div class="text-center">
+                                    <a class="small" href="login.html">Already have an account? Login!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('input[name="password"]').on('keyup', function () {
+                var password = $(this).val();
+                var hasUpperCase = /[A-Z]/.test(password);
+                var hasLowerCase = /[a-z]/.test(password);
+                var hasNumbers = /\d/.test(password);
+                var hasSymbols = /[^\w\s]/.test(password);
+                var meetsLengthReq = password.length >= 8;
+
+                if (meetsLengthReq && hasUpperCase && hasLowerCase && hasNumbers && hasSymbols) {
+                    $('.password-reqs').html('Great job! Password meets all requirements.').removeClass('text-danger').addClass('text-success');
+                    $('input[name="passwordrpt"]').prop('disabled', false);
+                } else {
+                    var reqs = [];
+                    if (!hasUpperCase) {
+                        reqs.push('at least one uppercase letter');
+                    }
+                    if (!hasLowerCase) {
+                        reqs.push('at least one lowercase letter');
+                    }
+                    if (!hasNumbers) {
+                        reqs.push('at least one number');
+                    }
+                    if (!hasSymbols) {
+                        reqs.push('at least one symbol');
+                    }
+                    if (!meetsLengthReq) {
+                        reqs.push('at least 8 characters');
+                    }
+                    var reqsStr = reqs.join(', ');
+                    $('.password-reqs').html('Password must have ' + reqsStr + '.').removeClass('text-success').addClass('text-danger');
+                    $('input[name="passwordrpt"]').prop('disabled', true);
+                }
+            });
+
+            $('input[name="passwordrpt"]').on('keyup', function () {
+                var password = $('input[name="password"]').val();
+                var passwordrpt = $(this).val();
+
+                if (password === passwordrpt) {
+                    $('.password-match').html('Passwords match!').removeClass('text-danger').addClass('text-success');
+                } else {
+                    $('.password-match').html('Passwords do not match.').removeClass('text-success').addClass('text-danger');
+                }
+            });
+
+            $('input[name=passwordrpt]').on('keyup', function () {
+                var password = $('input[name=password]').val();
+                var passwordrpt = $(this).val();
+                if (password === passwordrpt) {
+                    $('.password-mismatch').addClass('d-none');
+                    $('.password-match').removeClass('d-none');
+                } else {
+                    $('.password-match').addClass('d-none');
+                    $('.password-mismatch').removeClass('d-none');
+                }
+            });
+        });
+    </script>
+
+<?php include "footer.php"; ?>

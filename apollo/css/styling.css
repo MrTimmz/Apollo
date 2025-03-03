@@ -1,0 +1,165 @@
+body { font-family: 'Roboto', sans-serif; background-image: url('../assets/img/background.jpg'); }
+
+a { color: #FF8300; text-decoration: none; transition: color 0.3s ease-in-out; }
+a:hover { color: #FF4D00; }
+
+.button { background-color: #FF6600; border: none; color: #FFFFFF; padding: 10px 20px; font-size: 14px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; transition: background-color 0.3s ease-in-out; }
+.button:hover { background-color: #FF4D00; }
+
+.container {width:100%;}
+
+.spacer{clear: both;}
+.spacer.min{clear: both; height: 6px;}
+.spacer.sml{clear: both; height: 12px;}
+.spacer.dbl{clear: both; height: 20px;}
+.spacer.med{clear: both; height: 40px;}
+.spacer.reg{clear: both; height: 70px;}
+.spacer.lrg{clear: both; height: 100px;}
+
+header, .masthead h3 { color: white; text-align: center; }
+header .masthead, .frontpage {height: 560px; background-position: center; background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; text-align: center;   position: relative;}
+header .masthead, .frontpage .container { top:45px; position: relative; }
+header .masthead, .frontpage .container .date-container {border: solid 4px white; height:100px; width:100px; float:left;}
+header .masthead, .frontpage .container .date-container, .divider {border-style: solid;}
+
+header .masthead, .frontpage .container .headline-container {float:right; width:45%; background:#171515ab; padding:20px;}
+header .masthead, .frontpage .container .headline-container .divider {border: red solid 1px;}
+
+
+
+.section {width:100%; margin:  auto auto;}
+.section .border {border: solid #f36522 1px !important; margin-top:40px;}
+
+.section .header { float:left; background:white; padding:6px; margin: 20px 0px; }
+.section .header h3 {text-transform:uppercase; color:black;}
+
+.section .header.projects{  background: none !important; padding:6px; margin: 40px 0px ; text-align: center;  width: 100%;}
+.section .header.projects h3 {text-transform:uppercase; color:white;}
+
+.plain-text-content { font-family: 'Arial', sans-serif; font-size: 14px; color: #FFFFFF; line-height: 1.6; margin: 0 0 20px 0; padding: 0; }
+
+
+.header-text { font-size: 32px; color: #F5EBD1; text-transform: uppercase; letter-spacing: 1px; }
+
+
+
+
+
+.box-content { background-color: #262626; border: 1px solid #444444; padding: 15px; color: #FFFFFF; }
+.box-content-title { font-family: 'Arial', sans-serif; font-size: 20px; color: #FFD700; font-weight: bold; margin-bottom: 10px; }
+
+
+.blog-meta { font-size: 12px; color: #AAAAAA; margin-bottom: 10px; }
+
+header .featured-news{ padding-top: 0 !important; padding-bottom: 0 !important; background-image:none !important; min-height:0 !important; }
+
+
+
+
+.content-container {background: #09121c70; padding:20px;border: solid 1px #b1d8f1;border-radius: 0px 8px;box-shadow: beige;box-shadow: rgba(12, 60, 94, 0.22) 0px 54px 55px, rgba(74, 247, 248, 0.24) 0px -12px 30px, rgba(128, 255, 0, 0) 0px 4px 6px, rgba(219, 0, 0, 0) 0px 12px 13px, rgba(255, 0, 0, 0) 0px -3px 5px;}
+.content-container h4,
+.content-container h5 {padding:17px 10px 9px 60px; margin:0; text-transform:uppercase; color:#cae9ff; font-size:24px; background:url('https://cdn.robertsspaceindustries.com/static/images/content-page/title-icon2.png') no-repeat left center;}
+.content-container p { width:auto; min-width:inherit; max-width:inherit; color:#b1d8f1; /*! font-family:'Electrolize'; */ line-height:25px;}
+
+.content-container-left { width:30%;float:left; background: #09121c70; padding:20px;border: solid 1px #b1d8f1;border-radius: 0px 8px;box-shadow: beige;box-shadow: rgba(12, 60, 94, 0.22) 0px 54px 55px, rgba(74, 247, 248, 0.24) 0px -12px 30px, rgba(128, 255, 0, 0) 0px 4px 6px, rgba(219, 0, 0, 0) 0px 12px 13px, rgba(255, 0, 0, 0) 0px -3px 5px;}
+
+.content-container-right { width: 70%; float:left; background: #09121c70; padding:20px;border: solid 1px #b1d8f1;border-radius: 0px 8px;box-shadow: beige;box-shadow: rgba(12, 60, 94, 0.22) 0px 54px 55px, rgba(74, 247, 248, 0.24) 0px -12px 30px, rgba(128, 255, 0, 0) 0px 4px 6px, rgba(219, 0, 0, 0) 0px 12px 13px, rgba(255, 0, 0, 0) 0px -3px 5px;}
+
+
+.project-header {text-align: center; margin:40px 20px;}
+.project-header h3 {text-transform:uppercase; color:white;}
+
+.project-container-overview {border: 1px solid #e0e0e0; padding: 15px; border-radius: 10px; background-color: #09121c;}
+
+.project-hero-image {background-position: center; background-size:cover; position: relative;}
+.project-hero-image .project-logo {z-index: 20; position: relative; height: 100%; width: 100%; background-size: contain; background-position: center; background-repeat: no-repeat; position: relative;}
+.project-hero-image .project-logo img {position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+
+.project-overview-content h5 {   padding:7px 10px 9px 60px; margin:0; background:url('https://cdn.robertsspaceindustries.com/static/images/content-page/title-icon2.png') no-repeat left center; }
+.project-overview-content h5 a { text-transform:uppercase; color:#cae9ff; font-size:24px;}
+.project-overview-content h5 a:hover { text-shadow:0 0 .1em #fff0,0 0 .2em #fff0,0 0 .3em #fff0,0 0 .4em #f7f0,0 0 .6em #f0f0,0 0 .8em #f0f0,0 0 1em #f0f0,0 0 1.2em #4dffff;}
+
+.project-overview-content p { font-size: 1rem; color:#b1d8f1; }
+
+.project-logo-container { width: 225px; min-height: 500px; margin: -100px 0 0 0; background-size: contain; background-repeat: no-repeat; position: relative; z-index: 5;}
+.projects-wrapper { display: flex; flex-wrap: wrap; width: 100%; margin: 0; padding: 0; gap: 0; }
+.project-container { height: 70vh; width: calc(100% / 6); max-height: 600px; position: relative; z-index: 10; background-color: #f1f1f1; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+.project-color-overlay { position: absolute; height: 100%; width: 100%; z-index: 2; }
+.project-image { height: 100%; width: 100%; position: relative; z-index: 1; background-size: cover; background-position: center center; }
+.project-logo { z-index: 20; position: relative; height: 100%; width: 100%; background-size: contain; background-position: center; background-repeat: no-repeat; }
+
+.char {
+    opacity: 0; /* Characters start invisible */
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
+  }
+
+  .fade-in {
+    opacity: 1 !important; /* Fade in characters */
+  }
+
+
+
+.news-title { width: 60%; }
+.news-title, .blog-content { background: rgba(0, 0, 0, 0.45); padding: 0 10px; height: 115px; margin-bottom: 19px; }
+.news-title-overview { font-size: 1.5rem; font-weight: bold; font-size:24px; background:url('https://cdn.robertsspaceindustries.com/static/images/content-page/title-icon2.png') no-repeat left center; margin-bottom: 10px; }
+
+header .masthead, .news-detail-header {height:450px;  position: relative; background-position: center; background-size: cover;}
+header .masthead, .news-detail-header h2 {color: #cae9ff; text-transform: uppercase; font-size:2.1em; position: absolute; top: 50%; left: 50%; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%);}
+.news-detail-container { background-color: #f8f9fa; padding: 20px; border-radius: 10px; border: 1px solid #e0e0e0; margin-top: 20px; }
+.news-detail-title { font-size: 2rem; font-weight: bold; color: #343a40; margin-bottom: 15px; text-align: center; }
+.news-detail-content { font-size: 1.1rem; line-height: 1.6; color: #6c757d; text-align: justify; }
+
+
+.news-overview-container { border: 1px solid #e0e0e0; padding: 15px; border-radius: 10px; background-color: #09121c; }
+.news-overview-container .img-fluid { max-width: 100%; height: auto; object-fit: cover; border-radius: 8px; }
+.news-overview-content { display: flex; flex-direction: column; justify-content: space-between; }
+
+.news-overview-content h5 {   padding:17px 10px 9px 60px; margin:0; background:url('https://cdn.robertsspaceindustries.com/static/images/content-page/title-icon2.png') no-repeat left center; }
+.news-overview-content h5 a { text-transform:uppercase; color:#cae9ff; font-size:24px;}
+.news-overview-content h5 a:hover { text-shadow:0 0 .1em #fff0,0 0 .2em #fff0,0 0 .3em #fff0,0 0 .4em #f7f0,0 0 .6em #f0f0,0 0 .8em #f0f0,0 0 1em #f0f0,0 0 1.2em #4dffff;}
+
+.news-overview-content p { font-size: 1rem; color:#b1d8f1; }
+
+
+.news-containter { height: 412px !important; width: 639px; position: relative; z-index: 10; float: left; overflow: hidden; }
+
+.news-containter .news-content { top: 0; position: relative; width: 95%; display: inline-block; text-align: left; z-index: 5;}
+
+.news-containter .news-content h3 .border { border-style: solid; }
+
+.news-containter .news-content .triangle { position: absolute; z-index: 6; display: flex; justify-content: center; align-items: center; border-color: #0000 #ffffff transparent transparent; border-width: 165px 160px 0 0; border-style: solid; right: -62px; bottom: -90px; text-align: center; }
+.news-containter .news-content .triangle img { position: absolute; top: 50%; left: 50%; transform: translate(85%, -100%); z-index: 7;}
+
+.news-containter .news-content-desc { top: 129px; position: relative; width: 95%; display: inline-block; text-align: left; z-index: 5;}
+
+.news-containter .news-content .date { text-align: center; position: relative; z-index: 6; border: solid 2px white; height: 100px; width: 100px; float: left; margin: 15px 0px 0px 15px; }
+.news-containter .news-content .date .divider { position: relative; z-index: 6; border: solid 1px white; }
+.news-containter .news-content .date h3 { padding-top:4px;}
+
+.news-containter .news-content-desc h3 { position: relative; z-index: 6; padding-top:10px; color:white;padding-left: 10px;}
+
+.news-containter .news-project-color { height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 3; background-color: rgba(0, 0, 0, 0.5); }
+.news-containter .news-image { height: 100%; width: 100%; position: absolute; top: 0; left: 0; z-index: 2;background-position: center center !important; background-size: cover !important; }
+
+
+.blog-container { background: url('/apollo/assets/img/blog-placeholder.png'); height: 394px; width: 615px; float: left; margin: 0px 10px; display: flex; justify-content: center; background-size: contain; background-repeat: no-repeat; }
+
+.blog-content-wrapper { height: 394px; width: 615px; display: flex; justify-content: center; align-items: center; }
+
+.blog-image { height: 331px; width: 559px; position: relative; background-size: cover; background-position: center; border: solid 1px #ec6220; }
+
+.blog-badge { position: absolute; z-index: 6; display: flex; justify-content: center; align-items: center; right: 0; top: 0; height: 43px; border-color: #00000073 #00000073 #00ff2800 transparent; border-width: 43px 8px 0 39px; border-style: solid; text-align: center; }
+.blog-badge svg{ color:#ec6220; margin-right:20px;}
+.blog-badge h4 { margin: -35px 0 0 0; line-height: 1; color:white;}
+
+
+.blog-info-section { position: absolute; bottom: 0; left: 0; width: 100%; display: flex; flex-wrap: nowrap; z-index:4;}
+.blog-content, p { text-align: left; color:white;}
+
+
+.date { text-align:center; position:relative; z-index:6 ;border:solid 2px white; height:100px; width:100px; float:left; margin:-6px 0px 0px 15px;}
+.date .divider { position:relative; z-index:6; border:solid 1px white;}
+.date h3{ padding-top:4px; color:white; }
+
+.container-wrapper { float:left; }
